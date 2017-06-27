@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GPSImageTag.App"
+             xmlns:local="clr-namespace:GPSImageTag.Core.Helpers;assembly=GPSImageTag.Core">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{x:Static local:Colours.ButtonBackgroundColor}" />
+                <Setter Property="BorderRadius"
+                    Value="15" />
+                <Setter Property="BorderWidth"
+                    Value="1" />
+                <Setter Property="BorderColor"
+                     Value="{x:Static local:Colours.ButtonBorderColor}" /> 
+                <Setter Property="HeightRequest"
+                    Value="60" />
+                <Setter Property="WidthRequest"
+                    Value="120" />
+                <Setter Property="FontAttributes"
+                    Value="None" />
+                <Setter Property="FontFamily"
+                	Value="HelveticaNeue-Thin" />
+                <Setter Property="FontSize"
+                	Value="22" />
+                <Setter Property="TextColor"
+                	Value="{x:Static local:Colours.ButtonTextColor}" />
+            </Style>
+            <Style x:Key="mainLabelStyle"
+            	TargetType="Label">
+                <Setter
+                    Property="BackgroundColor"
+                    Value="Transparent" />
+                <Setter Property="FontAttributes"
+                    Value="None" />
+                <Setter Property="FontFamily"
+                	Value="HelveticaNeue-Thin" />
+                <Setter Property="FontSize"
+                	Value="18" />
+                <Setter Property="TextColor"
+                	Value="{x:Static local:Colours.LabelTextColor}"  />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
